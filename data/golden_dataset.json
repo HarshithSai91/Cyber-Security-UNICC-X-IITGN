@@ -1,0 +1,2248 @@
+[
+  {
+    "id": "bench_001_eternalblue_exact",
+    "query": "Attacker exploited CVE-2017-0144 using T1021.002 from host 198.51.100.24",
+    "expected_top_chunk": "",
+    "expected_tier": "EXACT",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_002_eternalblue_strong",
+    "query": "Observed lateral movement from 198.51.100.24 using technique T1021.002",
+    "expected_top_chunk": "",
+    "expected_tier": "STRONG",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_003_follina_partial",
+    "query": "MSDT remote code execution vulnerability CVE-2022-30190 executing arbitrary PowerShell T1059.001",
+    "expected_top_chunk": "",
+    "expected_tier": "PARTIAL",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_004_log4shell_weak",
+    "query": "Apache Log4j2 JNDI Remote Code Execution vulnerability in LDAP configuration CVE-2021-44228",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_005_proxylogon_weak",
+    "query": "Microsoft Exchange Server SSRF vulnerability CVE-2021-26855 permitting webshell writes",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_006_zerologon_weak",
+    "query": "Netlogon elevation of privilege via MS-NRPC domain controller channel CVE-2020-1472",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_007_winrar_weak",
+    "query": "WinRAR code execution via crafted ZIP archive parameter CVE-2023-38831",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2023-38831"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_008_citrix_unsupported",
+    "query": "Remote path traversal and information disclosure in network gateway appliance",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [
+      "CVE-2019-19781"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_009_benign_backup",
+    "query": "Routine software deployment and scheduled weekly backup maintenance across Linux servers",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_010_benign_printer",
+    "query": "Configuring printer queue parameters and desktop wallpaper group policy objects",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_011_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability in Citrix NetScaler (CVE-2026-88772)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-88772"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_012_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability in MikroTik RouterOS (CVE-2026-67279)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-67279"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_013_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Microsoft SharePoint Code Injection Vulnerability in Microsoft SharePoint (CVE-2026-65660)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-65660"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_014_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: WordPress Core Remote File Inclusion Vulnerability in WordPress Core (CVE-2026-87902)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-87902"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_015_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: WSO2 Multiple Products Path Traversal Vulnerability in WSO2 Multiple Products (CVE-2026-5430)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-5430"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_016_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Adobe Commerce and Magento Incorrect Authorization Vulnerability in Adobe Commerce and Magento (CVE-2026-71362)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-71362"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_017_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Arista VeloCloud Orchestrator Improper Input Validation Vulnerability in Arista VeloCloud Orchestrator (CVE-2026-93952)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-93952"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_018_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability in F5 BIG-IP APM (CVE-2026-94127)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-94127"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_019_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Check Point Multiple Products Path Traversal Vulnerability in Check Point Multiple Products (CVE-2026-93616)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-93616"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_020_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Check Point Multiple Products Improper Certificate Validation Vulnerability in Check Point Multiple Products (CVE-2026-85102)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-85102"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_021_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability in Zyxel GS1900 Series Switches (CVE-2026-7273)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-7273"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_022_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Linux Kernel Race Condition Vulnerability in Linux Kernel (CVE-2025-39964)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2025-39964"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_023_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Linux Kernel Out-of-Bounds Write Vulnerability in Linux Kernel (CVE-2026-53266)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-53266"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_024_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability in Linux Kernel (CVE-2025-39682)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2025-39682"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_025_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Google Pixel Improper Authorization Vulnerability in Google Pixel (CVE-2026-58704)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-58704"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_026_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability in Cisco Identity Services Engine (CVE-2026-76460)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-76460"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_027_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Acronis Backup Incorrect Default Permissions Vulnerability in Acronis Backup (CVE-2026-87886)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-87886"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_028_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Cisco Secure Email Gateway SQL Injection Vulnerability in Cisco Secure Email Gateway (CVE-2026-76461)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-76461"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_029_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability in ConnectWise ScreenConnect (CVE-2026-84869)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-84869"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_030_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: JFrog Artifactory Incorrect Authorization Vulnerability in JFrog Artifactory (CVE-2026-42016)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-42016"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_031_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: JFrog Artifactory Improper Authentication Vulnerability in JFrog Artifactory (CVE-2026-42018)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-42018"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_032_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability in GitLab Community Edition and Enterprise Edition (CVE-2026-85706)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-85706"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_033_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability in Citrix NetScaler (CVE-2026-19490)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-19490"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_034_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability in Fortinet Multiple Products (CVE-2025-25249)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2025-25249"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_035_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Google Chromium V8 Out of Bounds Write Vulnerability in Google Chromium V8 (CVE-2026-87491)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-87491"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_036_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability in Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management (CVE-2026-20079)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-20079"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_037_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability in Adobe Commerce and Magento (CVE-2026-75650)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-75650"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_038_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Microsoft Windows Link Following Vulnerability in Microsoft Windows (CVE-2026-81963)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-81963"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_039_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: N-able N-central Static Code Injection Vulnerability in N-able N-central (CVE-2026-86218)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-86218"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_040_cisa_kev",
+    "query": "CISA KEV active exploitation advisory: Google Chromium V8 Type Confusion Vulnerability in Google Chromium V8 (CVE-2026-85046)",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2026-85046"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_041_apt_campaign",
+    "query": "Fancy Bear credential harvesting using PsExec and T1078 valid accounts",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_042_apt_campaign",
+    "query": "Cozy Bear stealth operational campaign using Cobalt Strike and T1059 command line",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_043_apt_campaign",
+    "query": "Lazarus Group financial intrusion using Trojan malware and T1021 remote services",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_044_apt_campaign",
+    "query": "Volt Typhoon living-off-the-land techniques targeting critical infrastructure routers",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_045_apt_campaign",
+    "query": "Sandworm industrial network disruption deploying wipers and T1021.002 lateral movement",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_046_apt_campaign",
+    "query": "FIN7 point-of-sale malware deployment utilizing PowerShell T1059.001 injection",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_047_apt_campaign",
+    "query": "LockBit 3.0 ransomware affiliate exploiting public facing applications CVE-2021-44228",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_048_apt_campaign",
+    "query": "BlackCat ALPHV ransomware operator exploiting VPN gateways and Exchange CVE-2021-26855",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_049_apt_campaign",
+    "query": "Carbanak banking backdoor campaign employing Mimikatz for lsass credential dump",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_050_apt_campaign",
+    "query": "WannaCry ransomware outbreak propagating via SMBv1 exploit EternalBlue CVE-2017-0144",
+    "expected_top_chunk": "",
+    "expected_tier": "PARTIAL",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_051_apt_campaign",
+    "query": "Turla snake espionage framework utilizing covert waterholing and T1059 scripts",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_052_apt_campaign",
+    "query": "APT28 spearphishing campaign delivering malicious macros exploiting CVE-2023-38831",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2023-38831"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_053_apt_campaign",
+    "query": "APT29 cloud environment lateral movement abusing SAML tokens and Exchange CVE-2021-26855",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_054_apt_campaign",
+    "query": "Lazarus cryptocurrency bridge heist deploying custom C2 implant via CVE-2021-44228",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_055_apt_campaign",
+    "query": "Volt Typhoon persistent web shell placement on perimeter devices CVE-2021-26855",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_056_apt_campaign",
+    "query": "Sandworm destructive malware delivery targeting Ukrainian power substations CVE-2017-0144",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_057_apt_campaign",
+    "query": "FIN7 fake job interview lure containing weaponized document exploiting CVE-2022-30190",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_058_apt_campaign",
+    "query": "LockBit double extortion exfiltration using rclone and PsExec lateral execution",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_059_apt_campaign",
+    "query": "BlackCat affiliate privilege escalation via domain controller vulnerability CVE-2020-1472",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_060_apt_campaign",
+    "query": "Carbanak command and control traffic using HTTPS obfuscation and T1059.001",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_061_apt_campaign",
+    "query": "Lateral propagation using PsExec utility and pass the hash credentials across domain",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_062_apt_campaign",
+    "query": "LSASS memory injection using Mimikatz for NTLM hash harvesting on server",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_063_apt_campaign",
+    "query": "Cobalt Strike Beacon HTTP listener beaconing to external threat infrastructure",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_064_apt_campaign",
+    "query": "PowerShell Empire agent execution on target workstation via CVE-2022-30190",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_065_apt_campaign",
+    "query": "Active Directory reconnaissance using BloodHound / SharpHound ingestor tool",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_066_multihop",
+    "query": "Multi-hop lateral movement observed from 198.51.100.24 targeting EternalBlue CVE-2017-0144",
+    "expected_top_chunk": "",
+    "expected_tier": "EXACT",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_067_multihop",
+    "query": "Host 198.51.100.24 compromised via EternalBlue and initiating outbound connections",
+    "expected_top_chunk": "",
+    "expected_tier": "STRONG",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_068_multihop",
+    "query": "PowerShell T1059.001 execution invoking msdt.exe URL protocol handler CVE-2022-30190",
+    "expected_top_chunk": "",
+    "expected_tier": "PARTIAL",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_069_multihop",
+    "query": "Exploit payload delivering Cobalt Strike beacon via Apache Log4j2 JNDI CVE-2021-44228",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_070_multihop",
+    "query": "ProxyLogon post-exploitation dropped webshell communicating with external C2 CVE-2021-26855",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_071_multihop",
+    "query": "Domain privilege escalation abusing Netlogon cryptographic flaw CVE-2020-1472 with Mimikatz",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_072_multihop",
+    "query": "Malicious archive unpacking and executing arbitrary DLL file CVE-2023-38831",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2023-38831"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_073_multihop",
+    "query": "Inbound exploitation attempt against Microsoft Exchange OWA interface CVE-2021-26855",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_074_multihop",
+    "query": "LDAP lookup triggering remote code execution in Log4j runtime CVE-2021-44228",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_075_multihop",
+    "query": "Suspicious RPC traffic directed at domain controller MS-NRPC endpoint CVE-2020-1472",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2020-1472"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_076_multihop",
+    "query": "Lateral SMB traffic matching EternalBlue exploit signature CVE-2017-0144",
+    "expected_top_chunk": "",
+    "expected_tier": "PARTIAL",
+    "relevant_documents": [
+      "CVE-2017-0144"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_077_multihop",
+    "query": "Follina diagnostic tool vulnerability abused through Office doc template CVE-2022-30190",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2022-30190"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_078_multihop",
+    "query": "WinRAR ZIP spoofing technique leading to arbitrary code execution CVE-2023-38831",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2023-38831"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_079_multihop",
+    "query": "SSRF targeting internal Exchange backend services without authentication CVE-2021-26855",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-26855"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_080_multihop",
+    "query": "Log4j string substitution lookup triggering outbound JNDI requests CVE-2021-44228",
+    "expected_top_chunk": "",
+    "expected_tier": "WEAK",
+    "relevant_documents": [
+      "CVE-2021-44228"
+    ],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_081_ambiguous",
+    "query": "Unauthenticated remote buffer overflow reported in perimeter gateway device firmware",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_082_ambiguous",
+    "query": "Denial of service condition triggered by malformed HTTP request headers on proxy",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_083_ambiguous",
+    "query": "Memory corruption during parsing of deeply nested JSON structures in web server",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_084_ambiguous",
+    "query": "SQL injection vulnerability permitting unauthorized extraction of user database records",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_085_ambiguous",
+    "query": "Cross-site scripting flaw in administration portal navigation bar parameters",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_086_ambiguous",
+    "query": "Privilege escalation via insecure temporary file creation in helper daemon",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_087_ambiguous",
+    "query": "Integer underflow vulnerability leading to unexpected application crash on restart",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_088_ambiguous",
+    "query": "Improper certificate validation allowing man-in-the-middle inspection of TLS streams",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_089_ambiguous",
+    "query": "Arbitrary file overwrite during decompression of untrusted tarball archives",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_090_ambiguous",
+    "query": "Race condition in concurrent session management allowing session hijacking",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_091_benign",
+    "query": "Applying monthly operating system patches across Ubuntu development virtual machines",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_092_benign",
+    "query": "Configuring automated nightly backup schedules for PostgreSQL database clusters",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_093_benign",
+    "query": "Updating desktop wallpaper and screen saver timeout group policy preferences",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_094_benign",
+    "query": "Standardizing default browser homepage settings for newly onboarded marketing employees",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_095_benign",
+    "query": "Deploying office productivity software package updates using Microsoft Endpoint Manager",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_096_benign",
+    "query": "Configuring print server spooler drivers and network printer share permissions",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_097_benign",
+    "query": "Adding additional RAM and allocating extra virtual CPU cores to hypervisor nodes",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_098_benign",
+    "query": "Renewing internal TLS certificates for internal payroll intranet web portal",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_099_benign",
+    "query": "Rotating administrative credentials for routine quarterly compliance audit",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_100_benign",
+    "query": "Migrating legacy DNS zone records to new high-availability nameserver pair",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_101_benign",
+    "query": "Enabling dual monitor display settings and graphics driver updates on workstations",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_102_benign",
+    "query": "Scheduling routine maintenance window for annual datacenter generator testing",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_103_benign",
+    "query": "Installing localized keyboard language packs on standard corporate laptop build",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_104_benign",
+    "query": "Purging temporary log files from web servers to recover local disk storage capacity",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  },
+  {
+    "id": "bench_105_benign",
+    "query": "Verifying uninterrupted power supply battery backup health across server racks",
+    "expected_top_chunk": "",
+    "expected_tier": "UNSUPPORTED",
+    "relevant_documents": [],
+    "candidates": [
+      {
+        "chunk_id": "chunk_unsupported_noise",
+        "entities": {
+          "cves": [],
+          "mitre_techniques": [],
+          "ips": [],
+          "hashes": [],
+          "malware": []
+        },
+        "text": "Benign operational activity log with no matching threat intelligence indicators."
+      }
+    ]
+  }
+]

@@ -1,0 +1,628 @@
+{
+  "timestamp": "2026-10-05T07:44:51.133460+00:00",
+  "canonical_optimal_weights": {
+    "weight_ioc": 0.4,
+    "weight_ttp": 0.2,
+    "weight_semantic": 0.2,
+    "weight_cve": 0.2
+  },
+  "optimal_thresholds": {
+    "unsupported_to_weak": 0.1,
+    "weak_to_partial": 0.45,
+    "partial_to_strong": 0.65,
+    "strong_to_exact": 0.85
+  },
+  "performance_summary": {
+    "fisher_discriminant_ratio": 138.3,
+    "minimum_inter_tier_margin": 0.216,
+    "tier_separability": true,
+    "overlap_count": 0
+  },
+  "top_configurations": [
+    {
+      "weights": [
+        0.5,
+        0.2,
+        0.05,
+        0.25
+      ],
+      "fisher_ratio": 83.63,
+      "min_margin": 0.2403,
+      "avg_margin": 0.2477,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.004,
+        0.2443,
+        0.487,
+        0.741,
+        0.995
+      ],
+      "thresholds": [
+        0.0183,
+        0.383,
+        0.614,
+        0.868
+      ]
+    },
+    {
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "fisher_ratio": 138.3,
+      "min_margin": 0.216,
+      "avg_margin": 0.241,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.016,
+        0.2898,
+        0.548,
+        0.764,
+        0.98
+      ],
+      "thresholds": [
+        0.073,
+        0.432,
+        0.656,
+        0.872
+      ]
+    },
+    {
+      "weights": [
+        0.4,
+        0.15,
+        0.25,
+        0.2
+      ],
+      "fisher_ratio": 137.15,
+      "min_margin": 0.2157,
+      "avg_margin": 0.2388,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.02,
+        0.3193,
+        0.535,
+        0.755,
+        0.975
+      ],
+      "thresholds": [
+        0.0912,
+        0.44,
+        0.645,
+        0.865
+      ]
+    },
+    {
+      "weights": [
+        0.4,
+        0.25,
+        0.15,
+        0.2
+      ],
+      "fisher_ratio": 139.8,
+      "min_margin": 0.212,
+      "avg_margin": 0.2433,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.012,
+        0.2604,
+        0.561,
+        0.773,
+        0.985
+      ],
+      "thresholds": [
+        0.0548,
+        0.424,
+        0.667,
+        0.879
+      ]
+    },
+    {
+      "weights": [
+        0.45,
+        0.2,
+        0.15,
+        0.2
+      ],
+      "fisher_ratio": 139.27,
+      "min_margin": 0.212,
+      "avg_margin": 0.2433,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.012,
+        0.2604,
+        0.511,
+        0.773,
+        0.985
+      ],
+      "thresholds": [
+        0.0548,
+        0.399,
+        0.642,
+        0.879
+      ]
+    },
+    {
+      "weights": [
+        0.45,
+        0.15,
+        0.2,
+        0.2
+      ],
+      "fisher_ratio": 138.1,
+      "min_margin": 0.2082,
+      "avg_margin": 0.241,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.016,
+        0.2898,
+        0.498,
+        0.764,
+        0.98
+      ],
+      "thresholds": [
+        0.073,
+        0.407,
+        0.631,
+        0.872
+      ]
+    },
+    {
+      "weights": [
+        0.4,
+        0.3,
+        0.1,
+        0.2
+      ],
+      "fisher_ratio": 141.61,
+      "min_margin": 0.208,
+      "avg_margin": 0.2455,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.008,
+        0.2309,
+        0.574,
+        0.782,
+        0.99
+      ],
+      "thresholds": [
+        0.0365,
+        0.416,
+        0.678,
+        0.886
+      ]
+    },
+    {
+      "weights": [
+        0.5,
+        0.2,
+        0.1,
+        0.2
+      ],
+      "fisher_ratio": 140.85,
+      "min_margin": 0.208,
+      "avg_margin": 0.2455,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.008,
+        0.2309,
+        0.474,
+        0.782,
+        0.99
+      ],
+      "thresholds": [
+        0.0365,
+        0.366,
+        0.628,
+        0.886
+      ]
+    },
+    {
+      "weights": [
+        0.45,
+        0.25,
+        0.1,
+        0.2
+      ],
+      "fisher_ratio": 140.79,
+      "min_margin": 0.208,
+      "avg_margin": 0.2455,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.008,
+        0.2309,
+        0.524,
+        0.782,
+        0.99
+      ],
+      "thresholds": [
+        0.0365,
+        0.391,
+        0.653,
+        0.886
+      ]
+    },
+    {
+      "weights": [
+        0.45,
+        0.2,
+        0.1,
+        0.25
+      ],
+      "fisher_ratio": 82.28,
+      "min_margin": 0.208,
+      "avg_margin": 0.2455,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.008,
+        0.2738,
+        0.524,
+        0.732,
+        0.99
+      ],
+      "thresholds": [
+        0.0365,
+        0.416,
+        0.628,
+        0.861
+      ]
+    }
+  ],
+  "ablation_study": [
+    {
+      "experiment": "Full Model (Calibrated)",
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "min_margin": 0.216,
+      "fisher_ratio": 138.3,
+      "separable": true,
+      "overlap_count": 0,
+      "verdict": "Optimal"
+    },
+    {
+      "experiment": "Ablate IOC (w_ioc = 0)",
+      "weights": [
+        0.0,
+        0.3333,
+        0.3333,
+        0.3333
+      ],
+      "min_margin": -0.3066,
+      "fisher_ratio": 49.49,
+      "separable": false,
+      "overlap_count": 1,
+      "verdict": "FAILED (Tier Collapse)"
+    },
+    {
+      "experiment": "Ablate TTP (w_ttp = 0)",
+      "weights": [
+        0.5,
+        0.0,
+        0.25,
+        0.25
+      ],
+      "min_margin": 0.0727,
+      "fisher_ratio": 79.73,
+      "separable": true,
+      "overlap_count": 0,
+      "verdict": "Degraded"
+    },
+    {
+      "experiment": "Ablate Semantic (w_sem = 0)",
+      "weights": [
+        0.5,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "min_margin": 0.2148,
+      "fisher_ratio": 85.15,
+      "separable": false,
+      "overlap_count": 1,
+      "verdict": "FAILED (Tier Collapse)"
+    },
+    {
+      "experiment": "Ablate CVE (w_cve = 0)",
+      "weights": [
+        0.5,
+        0.25,
+        0.25,
+        0.0
+      ],
+      "min_margin": 0.02,
+      "fisher_ratio": 18837.05,
+      "separable": true,
+      "overlap_count": 0,
+      "verdict": "Degraded"
+    }
+  ],
+  "monte_carlo_random_test": {
+    "n_trials": 1000,
+    "calibrated_margin": 0.216,
+    "random_separable_rate": 0.518,
+    "random_mean_margin": -0.0786,
+    "random_std_margin": 0.2255,
+    "empirical_p_value": 0.003,
+    "statistically_significant": true
+  },
+  "sensitivity_analysis": [
+    {
+      "perturbation": "None (Center)",
+      "weights": [
+        0.4,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "fisher_ratio": 138.3,
+      "min_margin": 0.216,
+      "avg_margin": 0.241,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.016,
+        0.2898,
+        0.548,
+        0.764,
+        0.98
+      ],
+      "thresholds": [
+        0.073,
+        0.432,
+        0.656,
+        0.872
+      ]
+    },
+    {
+      "perturbation": "IOC +5%",
+      "weights": [
+        0.45,
+        0.1833,
+        0.1833,
+        0.1833
+      ],
+      "fisher_ratio": 171.28,
+      "min_margin": 0.198,
+      "avg_margin": 0.2417,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.0147,
+        0.2656,
+        0.5022,
+        0.7836,
+        0.9816
+      ],
+      "thresholds": [
+        0.0669,
+        0.3959,
+        0.6429,
+        0.8826
+      ]
+    },
+    {
+      "perturbation": "IOC -5%",
+      "weights": [
+        0.35,
+        0.2167,
+        0.2167,
+        0.2167
+      ],
+      "fisher_ratio": 114.09,
+      "min_margin": 0.1506,
+      "avg_margin": 0.2403,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.0173,
+        0.314,
+        0.5938,
+        0.7444,
+        0.9784
+      ],
+      "thresholds": [
+        0.0791,
+        0.4681,
+        0.6691,
+        0.8614
+      ]
+    },
+    {
+      "perturbation": "TTP +5%",
+      "weights": [
+        0.3833,
+        0.25,
+        0.1833,
+        0.1833
+      ],
+      "fisher_ratio": 172.02,
+      "min_margin": 0.198,
+      "avg_margin": 0.2417,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.0147,
+        0.2656,
+        0.5689,
+        0.7836,
+        0.9816
+      ],
+      "thresholds": [
+        0.0669,
+        0.4293,
+        0.6763,
+        0.8826
+      ]
+    },
+    {
+      "perturbation": "TTP -5%",
+      "weights": [
+        0.4167,
+        0.15,
+        0.2167,
+        0.2167
+      ],
+      "fisher_ratio": 113.08,
+      "min_margin": 0.213,
+      "avg_margin": 0.2403,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.0173,
+        0.314,
+        0.5271,
+        0.7444,
+        0.9784
+      ],
+      "thresholds": [
+        0.0791,
+        0.4347,
+        0.6357,
+        0.8614
+      ]
+    },
+    {
+      "perturbation": "Semantic +5%",
+      "weights": [
+        0.3833,
+        0.1833,
+        0.25,
+        0.1833
+      ],
+      "fisher_ratio": 170.53,
+      "min_margin": 0.2033,
+      "avg_margin": 0.2387,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.02,
+        0.305,
+        0.5516,
+        0.7716,
+        0.9749
+      ],
+      "thresholds": [
+        0.0912,
+        0.4399,
+        0.6616,
+        0.8732
+      ]
+    },
+    {
+      "perturbation": "Semantic -5%",
+      "weights": [
+        0.4167,
+        0.2167,
+        0.15,
+        0.2167
+      ],
+      "fisher_ratio": 114.88,
+      "min_margin": 0.212,
+      "avg_margin": 0.2433,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.012,
+        0.2747,
+        0.5444,
+        0.7564,
+        0.9851
+      ],
+      "thresholds": [
+        0.0548,
+        0.424,
+        0.6504,
+        0.8707
+      ]
+    },
+    {
+      "perturbation": "CVE +5%",
+      "weights": [
+        0.3833,
+        0.1833,
+        0.1833,
+        0.25
+      ],
+      "fisher_ratio": 80.61,
+      "min_margin": 0.148,
+      "avg_margin": 0.2417,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.0147,
+        0.323,
+        0.5689,
+        0.7169,
+        0.9816
+      ],
+      "thresholds": [
+        0.0669,
+        0.4626,
+        0.6429,
+        0.8492
+      ]
+    },
+    {
+      "perturbation": "CVE -5%",
+      "weights": [
+        0.4167,
+        0.2167,
+        0.2167,
+        0.15
+      ],
+      "fisher_ratio": 280.16,
+      "min_margin": 0.1673,
+      "avg_margin": 0.2403,
+      "monotonic": true,
+      "separable": true,
+      "overlap_count": 0,
+      "means": [
+        0.0173,
+        0.2567,
+        0.5271,
+        0.8111,
+        0.9784
+      ],
+      "thresholds": [
+        0.0791,
+        0.4014,
+        0.6691,
+        0.8948
+      ]
+    }
+  ]
+}

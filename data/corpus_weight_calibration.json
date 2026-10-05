@@ -1,0 +1,315 @@
+{
+  "timestamp": "2026-10-05T07:46:56.298569+00:00",
+  "corpus_size": 362301,
+  "tier_distribution": {
+    "EXACT": 3967,
+    "STRONG": 7042,
+    "WEAK": 313614,
+    "PARTIAL": 37678,
+    "UNSUPPORTED": 0
+  },
+  "corpus_optimal_weights": {
+    "weight_ioc": 0.05,
+    "weight_ttp": 0.35,
+    "weight_semantic": 0.1,
+    "weight_cve": 0.5
+  },
+  "corpus_optimal_thresholds": {
+    "UNSUPPORTED_to_WEAK": 0.1613,
+    "WEAK_to_PARTIAL": 0.4469,
+    "PARTIAL_to_STRONG": 0.5039,
+    "STRONG_to_EXACT": 0.5427
+  },
+  "performance": {
+    "fisher_discriminant_ratio": 48.44,
+    "min_inter_tier_margin": 0.0646,
+    "tier_separable": false,
+    "overlap_count": 3,
+    "tier_means": {
+      "UNSUPPORTED": 0.0,
+      "WEAK": 0.364,
+      "PARTIAL": 0.4286,
+      "STRONG": 0.4971,
+      "EXACT": 0.6103
+    }
+  },
+  "comparison_vs_105_query_calibration": {
+    "105_query_weights": [
+      0.4,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "105_query_min_margin": 0.0141,
+    "corpus_min_margin": 0.0646,
+    "improvement": 0.0505
+  },
+  "monte_carlo_hypothesis_test": {
+    "n_trials": 500,
+    "random_separable_rate": 0.0,
+    "empirical_p_value": 0.0,
+    "statistically_significant": true
+  },
+  "top_10_configurations": [
+    {
+      "weights": [
+        0.05,
+        0.35,
+        0.1,
+        0.5
+      ],
+      "fisher_ratio": 48.44,
+      "min_margin": 0.0646,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.364,
+        0.4286,
+        0.4971,
+        0.6103
+      ],
+      "thresholds": [
+        0.1613,
+        0.4469,
+        0.5039,
+        0.5427
+      ]
+    },
+    {
+      "weights": [
+        0.1,
+        0.35,
+        0.05,
+        0.5
+      ],
+      "fisher_ratio": 63.65,
+      "min_margin": 0.0622,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3726,
+        0.4348,
+        0.5031,
+        0.6136
+      ],
+      "thresholds": [
+        0.1725,
+        0.4535,
+        0.5063,
+        0.5599
+      ]
+    },
+    {
+      "weights": [
+        0.05,
+        0.35,
+        0.05,
+        0.55
+      ],
+      "fisher_ratio": 63.79,
+      "min_margin": 0.062,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3693,
+        0.4313,
+        0.5126,
+        0.6285
+      ],
+      "thresholds": [
+        0.1713,
+        0.4485,
+        0.4969,
+        0.5574
+      ]
+    },
+    {
+      "weights": [
+        0.05,
+        0.3,
+        0.2,
+        0.45
+      ],
+      "fisher_ratio": 27.74,
+      "min_margin": 0.0614,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3717,
+        0.433,
+        0.4965,
+        0.6133
+      ],
+      "thresholds": [
+        0.1512,
+        0.4589,
+        0.5202,
+        0.5213
+      ]
+    },
+    {
+      "weights": [
+        0.05,
+        0.4,
+        0.05,
+        0.5
+      ],
+      "fisher_ratio": 54.18,
+      "min_margin": 0.0608,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3509,
+        0.4214,
+        0.4822,
+        0.5892
+      ],
+      "thresholds": [
+        0.1613,
+        0.4335,
+        0.4944,
+        0.5495
+      ]
+    },
+    {
+      "weights": [
+        0.1,
+        0.3,
+        0.15,
+        0.45
+      ],
+      "fisher_ratio": 38.48,
+      "min_margin": 0.0589,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3803,
+        0.4392,
+        0.5025,
+        0.6166
+      ],
+      "thresholds": [
+        0.1625,
+        0.4654,
+        0.5208,
+        0.5385
+      ]
+    },
+    {
+      "weights": [
+        0.05,
+        0.3,
+        0.15,
+        0.5
+      ],
+      "fisher_ratio": 39.76,
+      "min_margin": 0.0588,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.377,
+        0.4358,
+        0.512,
+        0.6315
+      ],
+      "thresholds": [
+        0.1613,
+        0.4604,
+        0.5133,
+        0.536
+      ]
+    },
+    {
+      "weights": [
+        0.05,
+        0.25,
+        0.3,
+        0.4
+      ],
+      "fisher_ratio": 16.14,
+      "min_margin": 0.0581,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3794,
+        0.4375,
+        0.4959,
+        0.6162
+      ],
+      "thresholds": [
+        0.1412,
+        0.4708,
+        0.5366,
+        0.5392
+      ]
+    },
+    {
+      "weights": [
+        0.15,
+        0.3,
+        0.1,
+        0.45
+      ],
+      "fisher_ratio": 52.52,
+      "min_margin": 0.0565,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3889,
+        0.4454,
+        0.5086,
+        0.6198
+      ],
+      "thresholds": [
+        0.1738,
+        0.4719,
+        0.5214,
+        0.5556
+      ]
+    },
+    {
+      "weights": [
+        0.1,
+        0.3,
+        0.1,
+        0.5
+      ],
+      "fisher_ratio": 55.14,
+      "min_margin": 0.0563,
+      "monotonic": true,
+      "separable": false,
+      "overlap_count": 3,
+      "means": [
+        0.0,
+        0.3856,
+        0.442,
+        0.518,
+        0.6348
+      ],
+      "thresholds": [
+        0.1725,
+        0.4669,
+        0.5139,
+        0.5532
+      ]
+    }
+  ]
+}

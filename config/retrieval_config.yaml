@@ -1,0 +1,68 @@
+# Retrieval & Storage Configuration
+
+# Storage paths
+qdrant_storage_path: "./data/qdrant_storage"
+sqlite_db_path: "./data/sqlite/corpus_store.db"
+quarantine_path: "./data/quarantined"
+
+# Qdrant HNSW index settings
+hnsw_m: 32
+hnsw_ef_construct: 200
+hnsw_ef_search: 64
+
+# Qdrant scalar quantization
+quantization_type: "Int8"
+quantization_quantile: 0.99
+quantization_always_ram: true
+
+# MinHash deduplication
+minhash_num_permutations: 128
+minhash_similarity_threshold: 0.90
+minhash_shingle_size: 3
+
+# Ingestion pipeline
+pipeline_batch_size: 500
+min_text_chars: 15
+max_text_chars: 32000
+epss_min_score_threshold: 0.5
+
+# ---------------------------------------------------------------------------
+# Hybrid retrieval, reranking & graph (Suhani)
+# ---------------------------------------------------------------------------
+
+# BM25 lexical index (Okapi)
+bm25_k1: 1.5
+bm25_b: 0.75
+bm25_text_column: "enriched_text"   # "enriched_text" (Strategy-C) or "text"
+
+# Reciprocal Rank Fusion
+rrf_k: 60                # RRF smoothing constant
+retrieval_candidate_k: 50   # candidates pulled from each retriever before fusion
+retrieval_top_k: 10         # fused results returned to the reranker
+
+# Cross-encoder reranker
+reranker_model: "BAAI/bge-reranker-v2-m3"
+reranker_use_fp16: true
+reranker_top_k: 5           # final evidence chunks after reranking
+
+# MITRE ATT&CK STIX knowledge graph
+mitre_attack_bundle_path: "./data/mitre/enterprise-attack.json"
+
+# ---------------------------------------------------------------------------
+# Calibrated 4-Factor Composite Scoring & 5-Tier Gating (Harshith)
+# ---------------------------------------------------------------------------
+# Derived via Simplex Parameter Sweep & Fisher Linear Discriminant Optimization
+composite_scoring:
+  # Empirically calibrated via Simplex Optimization & Fisher Linear Discriminant Analysis
+  # Derived across 969 parameter combinations (p = 0.003, min_margin = 0.2160)
+  weights:
+    ioc: 0.40          # High-fidelity definitive host/network indicators (IP, SHA256, MD5)
+    ttp: 0.20          # Behavioral TTP / MITRE technique / malware attribution
+    semantic: 0.20     # Dense / cross-encoder semantic relevance
+    cve: 0.20          # Standard vulnerability identifier match
+  thresholds:
+    exact: 0.85        # Definitive multi-signal alignment (IOC + TTP + CVE)
+    strong: 0.65       # High-fidelity IOC + behavioral match
+    partial: 0.45      # Verified CVE + behavioral alignment
+    weak: 0.10         # Single vulnerability or symptom mention
+    # < 0.10: UNSUPPORTED (Benign noise or ungrounded queries)

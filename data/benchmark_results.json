@@ -1,0 +1,1895 @@
+{
+  "timestamp": "2026-09-30T11:19:39.091047+00:00",
+  "retrieval_engine": "ThreatRetrieverEngine (AUTO mode)",
+  "benchmark_dataset_scale": {
+    "total_queries": 105,
+    "category_breakdown": {
+      "multi_hop_exact": 1,
+      "multi_hop_strong": 1,
+      "cve_and_ttp": 1,
+      "cve_technical": 4,
+      "ambiguous": 1,
+      "benign_noise": 17,
+      "cisa_advisory": 30,
+      "apt_threat_actor": 25,
+      "multi_hop_query": 15,
+      "ambiguous_query": 10
+    }
+  },
+  "retrieval_accuracy": {
+    "hit_at_1": 0.9041,
+    "hit_at_3": 0.9041,
+    "hit_at_5": 0.9041,
+    "mrr_at_10": 0.9055,
+    "ndcg_at_10": 0.9081,
+    "map_at_10": 0.9055
+  },
+  "context_quality": {
+    "context_precision": 0.5256,
+    "context_recall": 0.4786
+  },
+  "generation_fidelity": {
+    "faithfulness": 0.9778,
+    "hallucination_rate": 0.0222,
+    "answer_relevance": 0.2576
+  },
+  "citation_attribution": {
+    "doc_id_accuracy": 0.9041,
+    "provenance_completeness": 1.0,
+    "span_overlap_f1": 0.9869
+  },
+  "classification_fidelity": {
+    "macro_f1": 1.0,
+    "confusion_matrix": {
+      "EXACT": {
+        "EXACT": 2,
+        "STRONG": 0,
+        "PARTIAL": 0,
+        "WEAK": 0,
+        "UNSUPPORTED": 0
+      },
+      "STRONG": {
+        "EXACT": 0,
+        "STRONG": 2,
+        "PARTIAL": 0,
+        "WEAK": 0,
+        "UNSUPPORTED": 0
+      },
+      "PARTIAL": {
+        "EXACT": 0,
+        "STRONG": 0,
+        "PARTIAL": 4,
+        "WEAK": 0,
+        "UNSUPPORTED": 0
+      },
+      "WEAK": {
+        "EXACT": 0,
+        "STRONG": 0,
+        "PARTIAL": 0,
+        "WEAK": 64,
+        "UNSUPPORTED": 0
+      },
+      "UNSUPPORTED": {
+        "EXACT": 0,
+        "STRONG": 0,
+        "PARTIAL": 0,
+        "WEAK": 0,
+        "UNSUPPORTED": 33
+      }
+    },
+    "per_class_metrics": {
+      "EXACT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "STRONG": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "PARTIAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "WEAK": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 64
+      },
+      "UNSUPPORTED": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 33
+      }
+    }
+  },
+  "stress_latency_sla": {
+    "sequential_percentiles": {
+      "p50_ms": 57.33,
+      "p90_ms": 128.42,
+      "p95_ms": 168.3,
+      "p99_ms": 194.33,
+      "mean_ms": 70.23,
+      "min_ms": 6.61,
+      "max_ms": 237.65
+    },
+    "concurrent_load_results": {
+      "concurrency_1": {
+        "concurrency": 1,
+        "queries_executed": 40,
+        "throughput_qps": 11.17,
+        "p50_ms": 91.47,
+        "p90_ms": 138.96,
+        "p95_ms": 179.55,
+        "p99_ms": 181.06,
+        "mean_ms": 89.51
+      },
+      "concurrency_5": {
+        "concurrency": 5,
+        "queries_executed": 40,
+        "throughput_qps": 11.11,
+        "p50_ms": 441.73,
+        "p90_ms": 578.72,
+        "p95_ms": 601.81,
+        "p99_ms": 606.32,
+        "mean_ms": 425.73
+      },
+      "concurrency_10": {
+        "concurrency": 10,
+        "queries_executed": 40,
+        "throughput_qps": 11.07,
+        "p50_ms": 867.42,
+        "p90_ms": 1004.52,
+        "p95_ms": 1018.89,
+        "p99_ms": 1030.7,
+        "mean_ms": 780.06
+      },
+      "concurrency_20": {
+        "concurrency": 20,
+        "queries_executed": 40,
+        "throughput_qps": 11.11,
+        "p50_ms": 1693.5,
+        "p90_ms": 1902.11,
+        "p95_ms": 1956.37,
+        "p99_ms": 1957.57,
+        "mean_ms": 1336.83
+      }
+    }
+  },
+  "quality_gates": {
+    "retrieval": "PASS",
+    "latency_sla": "PASS",
+    "faithfulness": "PASS",
+    "classification": "PASS"
+  },
+  "per_query_results": [
+    {
+      "query_id": "bench_001_eternalblue_exact",
+      "category": "multi_hop_exact",
+      "query": "Attacker exploited CVE-2017-0144 using T1021.002 from host 198.51.100.24",
+      "expected_tier": "EXACT",
+      "predicted_tier": "EXACT",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "EXACT",
+        "composite_score": 1.0
+      },
+      "latency_ms": 104.34
+    },
+    {
+      "query_id": "bench_002_eternalblue_strong",
+      "category": "multi_hop_strong",
+      "query": "Observed lateral movement from 198.51.100.24 using technique T1021.002",
+      "expected_tier": "STRONG",
+      "predicted_tier": "STRONG",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "STRONG",
+        "composite_score": 0.85
+      },
+      "latency_ms": 76.54
+    },
+    {
+      "query_id": "bench_003_follina_partial",
+      "category": "cve_and_ttp",
+      "query": "MSDT remote code execution vulnerability CVE-2022-30190 executing arbitrary PowerShell T1059.001",
+      "expected_tier": "PARTIAL",
+      "predicted_tier": "PARTIAL",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "PARTIAL",
+        "composite_score": 0.65
+      },
+      "latency_ms": 87.27
+    },
+    {
+      "query_id": "bench_004_log4shell_weak",
+      "category": "cve_technical",
+      "query": "Apache Log4j2 JNDI Remote Code Execution vulnerability in LDAP configuration CVE-2021-44228",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "9d2b2209878c29c921938d938154de72",
+        "document_id": "CVE-2021-44228",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 102.78
+    },
+    {
+      "query_id": "bench_005_proxylogon_weak",
+      "category": "cve_technical",
+      "query": "Microsoft Exchange Server SSRF vulnerability CVE-2021-26855 permitting webshell writes",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 58.32
+    },
+    {
+      "query_id": "bench_006_zerologon_weak",
+      "category": "cve_technical",
+      "query": "Netlogon elevation of privilege via MS-NRPC domain controller channel CVE-2020-1472",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "57379a7d69a25d8e107536ea97f7374e",
+        "document_id": "CVE-2020-1472",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 30.2
+    },
+    {
+      "query_id": "bench_007_winrar_weak",
+      "category": "cve_technical",
+      "query": "WinRAR code execution via crafted ZIP archive parameter CVE-2023-38831",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2023-38831"
+      ],
+      "top_match": {
+        "chunk_id": "e665d74632f5005131c9273d8f0323eb",
+        "document_id": "CVE-2023-38831",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 164.26
+    },
+    {
+      "query_id": "bench_008_citrix_unsupported",
+      "category": "ambiguous",
+      "query": "Remote path traversal and information disclosure in network gateway appliance",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [
+        "CVE-2019-19781"
+      ],
+      "top_match": {
+        "chunk_id": "c26cf3e77a0510e397b977c85fbbe706",
+        "document_id": "CVE-2020-8195_KEV",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 97.0
+    },
+    {
+      "query_id": "bench_009_benign_backup",
+      "category": "benign_noise",
+      "query": "Routine software deployment and scheduled weekly backup maintenance across Linux servers",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "8423b5256fcfddfb12be78d37bbb51d8",
+        "document_id": "CVE-2016-5763",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 45.11
+    },
+    {
+      "query_id": "bench_010_benign_printer",
+      "category": "benign_noise",
+      "query": "Configuring printer queue parameters and desktop wallpaper group policy objects",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "b5b8a18feaa180c1f8bd1ba97a5f756c",
+        "document_id": "CVE-2026-52976",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 22.46
+    },
+    {
+      "query_id": "bench_011_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability in Citrix NetScaler (CVE-2026-88772)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-88772"
+      ],
+      "top_match": {
+        "chunk_id": "81c13ea24fa0e68a4b4fee4a1636aebf",
+        "document_id": "CVE-2026-88772",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 135.76
+    },
+    {
+      "query_id": "bench_012_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability in MikroTik RouterOS (CVE-2026-67279)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-67279"
+      ],
+      "top_match": {
+        "chunk_id": "995375e20f35d5595a3d44a5d2c927de",
+        "document_id": "CVE-2026-67279",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 41.84
+    },
+    {
+      "query_id": "bench_013_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Microsoft SharePoint Code Injection Vulnerability in Microsoft SharePoint (CVE-2026-65660)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-65660"
+      ],
+      "top_match": {
+        "chunk_id": "160dfafa649985b9a960ba05daed47d3",
+        "document_id": "CVE-2026-65660_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 118.13
+    },
+    {
+      "query_id": "bench_014_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: WordPress Core Remote File Inclusion Vulnerability in WordPress Core (CVE-2026-87902)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-87902"
+      ],
+      "top_match": {
+        "chunk_id": "770513edc1c9aa803d742f9f971ad796",
+        "document_id": "CVE-2026-87902",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 121.15
+    },
+    {
+      "query_id": "bench_015_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: WSO2 Multiple Products Path Traversal Vulnerability in WSO2 Multiple Products (CVE-2026-5430)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-5430"
+      ],
+      "top_match": {
+        "chunk_id": "6170f0466a7c86cf434dda0a5ac793d4",
+        "document_id": "CVE-2026-5430",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 83.48
+    },
+    {
+      "query_id": "bench_016_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Adobe Commerce and Magento Incorrect Authorization Vulnerability in Adobe Commerce and Magento (CVE-2026-71362)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-71362"
+      ],
+      "top_match": {
+        "chunk_id": "20b098e241be490b33155defaac038bd",
+        "document_id": "CVE-2026-71362",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 41.21
+    },
+    {
+      "query_id": "bench_017_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Arista VeloCloud Orchestrator Improper Input Validation Vulnerability in Arista VeloCloud Orchestrator (CVE-2026-93952)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-93952"
+      ],
+      "top_match": {
+        "chunk_id": "9eec0393bbdcdc5a9fa46a5c92ea61d5",
+        "document_id": "CVE-2026-93952",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 88.5
+    },
+    {
+      "query_id": "bench_018_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability in F5 BIG-IP APM (CVE-2026-94127)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-94127"
+      ],
+      "top_match": {
+        "chunk_id": "f76ec81b4e93eafbf0c02d9092366409",
+        "document_id": "CVE-2026-94127",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 94.73
+    },
+    {
+      "query_id": "bench_019_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Check Point Multiple Products Path Traversal Vulnerability in Check Point Multiple Products (CVE-2026-93616)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-93616"
+      ],
+      "top_match": {
+        "chunk_id": "2244baf27b841f3f13808cb3f320bd91",
+        "document_id": "CVE-2026-93616",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 114.11
+    },
+    {
+      "query_id": "bench_020_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Check Point Multiple Products Improper Certificate Validation Vulnerability in Check Point Multiple Products (CVE-2026-85102)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-85102"
+      ],
+      "top_match": {
+        "chunk_id": "d855c71a8f6671d4c010fe42157fa05a",
+        "document_id": "CVE-2026-85102",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 126.47
+    },
+    {
+      "query_id": "bench_021_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability in Zyxel GS1900 Series Switches (CVE-2026-7273)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-7273"
+      ],
+      "top_match": {
+        "chunk_id": "483ea6cd00157a2c6e95dca39611257a",
+        "document_id": "CVE-2026-7273",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 92.6
+    },
+    {
+      "query_id": "bench_022_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Linux Kernel Race Condition Vulnerability in Linux Kernel (CVE-2025-39964)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2025-39964"
+      ],
+      "top_match": {
+        "chunk_id": "20c09d34bdb8353f55a4d0adf41eef03",
+        "document_id": "CVE-2025-39964",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 116.19
+    },
+    {
+      "query_id": "bench_023_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Linux Kernel Out-of-Bounds Write Vulnerability in Linux Kernel (CVE-2026-53266)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-53266"
+      ],
+      "top_match": {
+        "chunk_id": "8c26c08c68a23195cac83da426f48327",
+        "document_id": "CVE-2026-53266",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 128.03
+    },
+    {
+      "query_id": "bench_024_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability in Linux Kernel (CVE-2025-39682)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2025-39682"
+      ],
+      "top_match": {
+        "chunk_id": "7a234ab147733495ed108b46f7b935f7",
+        "document_id": "CVE-2025-39682",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 133.49
+    },
+    {
+      "query_id": "bench_025_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Google Pixel Improper Authorization Vulnerability in Google Pixel (CVE-2026-58704)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-58704"
+      ],
+      "top_match": {
+        "chunk_id": "c6a4f2eab2365ba8885ce43bbab02517",
+        "document_id": "CVE-2026-58704",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 61.81
+    },
+    {
+      "query_id": "bench_026_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability in Cisco Identity Services Engine (CVE-2026-76460)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-76460"
+      ],
+      "top_match": {
+        "chunk_id": "7d952be8d89051c6d1a195ba97c6ea86",
+        "document_id": "CVE-2026-76460",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 92.1
+    },
+    {
+      "query_id": "bench_027_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Acronis Backup Incorrect Default Permissions Vulnerability in Acronis Backup (CVE-2026-87886)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-87886"
+      ],
+      "top_match": {
+        "chunk_id": "24fdab2c325c1312a7bc95d624a0981a",
+        "document_id": "CVE-2026-87886",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 50.72
+    },
+    {
+      "query_id": "bench_028_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Cisco Secure Email Gateway SQL Injection Vulnerability in Cisco Secure Email Gateway (CVE-2026-76461)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-76461"
+      ],
+      "top_match": {
+        "chunk_id": "92ec6e8f71f26663f413697d30cb3d26",
+        "document_id": "CVE-2026-76461",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 116.27
+    },
+    {
+      "query_id": "bench_029_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability in ConnectWise ScreenConnect (CVE-2026-84869)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-84869"
+      ],
+      "top_match": {
+        "chunk_id": "66fbabdc303882a9a88a3f5292d74000",
+        "document_id": "CVE-2026-84869",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 87.65
+    },
+    {
+      "query_id": "bench_030_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: JFrog Artifactory Incorrect Authorization Vulnerability in JFrog Artifactory (CVE-2026-42016)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-42016"
+      ],
+      "top_match": {
+        "chunk_id": "2fe3f977dd224eb2367797b94535eeb2",
+        "document_id": "CVE-2026-42016",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 35.63
+    },
+    {
+      "query_id": "bench_031_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: JFrog Artifactory Improper Authentication Vulnerability in JFrog Artifactory (CVE-2026-42018)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-42018"
+      ],
+      "top_match": {
+        "chunk_id": "748addbaeb57bc23ffe692fdf0760c78",
+        "document_id": "CVE-2026-42018",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 54.46
+    },
+    {
+      "query_id": "bench_032_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability in GitLab Community Edition and Enterprise Edition (CVE-2026-85706)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-85706"
+      ],
+      "top_match": {
+        "chunk_id": "ae6caf31e4744793eb3a98fb63198424",
+        "document_id": "CVE-2026-85706",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 61.15
+    },
+    {
+      "query_id": "bench_033_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability in Citrix NetScaler (CVE-2026-19490)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-19490"
+      ],
+      "top_match": {
+        "chunk_id": "06c2abd9f4255445f1103d32970f51d7",
+        "document_id": "CVE-2026-19490_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 100.85
+    },
+    {
+      "query_id": "bench_034_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability in Fortinet Multiple Products (CVE-2025-25249)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2025-25249"
+      ],
+      "top_match": {
+        "chunk_id": "bfdca08ce4d22b009cfdb88e89e4f125",
+        "document_id": "CVE-2025-25249",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 117.58
+    },
+    {
+      "query_id": "bench_035_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Google Chromium V8 Out of Bounds Write Vulnerability in Google Chromium V8 (CVE-2026-87491)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-87491"
+      ],
+      "top_match": {
+        "chunk_id": "612b8db6f3483ed71724950dfee66ea2",
+        "document_id": "CVE-2026-87491",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 71.76
+    },
+    {
+      "query_id": "bench_036_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability in Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management (CVE-2026-20079)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-20079"
+      ],
+      "top_match": {
+        "chunk_id": "71863459bb99572cbf142c4cff6db69b",
+        "document_id": "CVE-2026-20079",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 177.95
+    },
+    {
+      "query_id": "bench_037_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability in Adobe Commerce and Magento (CVE-2026-75650)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-75650"
+      ],
+      "top_match": {
+        "chunk_id": "4560346fcf3de9df40accd50e299b253",
+        "document_id": "CVE-2026-75650_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 92.93
+    },
+    {
+      "query_id": "bench_038_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Microsoft Windows Link Following Vulnerability in Microsoft Windows (CVE-2026-81963)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-81963"
+      ],
+      "top_match": {
+        "chunk_id": "c0f94024d7c565098278c5b659330db1",
+        "document_id": "CVE-2026-81963_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 84.39
+    },
+    {
+      "query_id": "bench_039_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: N-able N-central Static Code Injection Vulnerability in N-able N-central (CVE-2026-86218)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-86218"
+      ],
+      "top_match": {
+        "chunk_id": "c54e88bcce8b77ebf10dd962fa4b8c47",
+        "document_id": "CVE-2026-86218",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 184.19
+    },
+    {
+      "query_id": "bench_040_cisa_kev",
+      "category": "cisa_advisory",
+      "query": "CISA KEV active exploitation advisory: Google Chromium V8 Type Confusion Vulnerability in Google Chromium V8 (CVE-2026-85046)",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2026-85046"
+      ],
+      "top_match": {
+        "chunk_id": "3dd12bceb534e5d183a57f5ff7cfdb39",
+        "document_id": "CVE-2026-85046",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 44.27
+    },
+    {
+      "query_id": "bench_041_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Fancy Bear credential harvesting using PsExec and T1078 valid accounts",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "a80b98209006502cfa0f607f82ea3532",
+        "document_id": "CVE-2021-1733",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.3375
+      },
+      "latency_ms": 30.02
+    },
+    {
+      "query_id": "bench_042_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Cozy Bear stealth operational campaign using Cobalt Strike and T1059 command line",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "0b3fee82d23cf5f2af8426da47457d06",
+        "document_id": "CVE-2022-39197_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.375
+      },
+      "latency_ms": 37.39
+    },
+    {
+      "query_id": "bench_043_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Lazarus Group financial intrusion using Trojan malware and T1021 remote services",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "522ee7481e4d157d3ba8ffbbfc34b96f",
+        "document_id": "CVE-2008-5007",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 34.55
+    },
+    {
+      "query_id": "bench_044_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Volt Typhoon living-off-the-land techniques targeting critical infrastructure routers",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "9433d966a037e7fe386af3448aeb6e74",
+        "document_id": "CVE-2022-1823",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 18.12
+    },
+    {
+      "query_id": "bench_045_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Sandworm industrial network disruption deploying wipers and T1021.002 lateral movement",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.5
+      },
+      "latency_ms": 22.18
+    },
+    {
+      "query_id": "bench_046_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "FIN7 point-of-sale malware deployment utilizing PowerShell T1059.001 injection",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.5
+      },
+      "latency_ms": 40.94
+    },
+    {
+      "query_id": "bench_047_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "LockBit 3.0 ransomware affiliate exploiting public facing applications CVE-2021-44228",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "9d2b2209878c29c921938d938154de72",
+        "document_id": "CVE-2021-44228",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 24.46
+    },
+    {
+      "query_id": "bench_048_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "BlackCat ALPHV ransomware operator exploiting VPN gateways and Exchange CVE-2021-26855",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 9.15
+    },
+    {
+      "query_id": "bench_049_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Carbanak banking backdoor campaign employing Mimikatz for lsass credential dump",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "d4695a66326054ed0415ad9c8f632225",
+        "document_id": "CVE-2008-7092",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 6.61
+    },
+    {
+      "query_id": "bench_050_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "WannaCry ransomware outbreak propagating via SMBv1 exploit EternalBlue CVE-2017-0144",
+      "expected_tier": "PARTIAL",
+      "predicted_tier": "PARTIAL",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "PARTIAL",
+        "composite_score": 0.6125
+      },
+      "latency_ms": 34.1
+    },
+    {
+      "query_id": "bench_051_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Turla snake espionage framework utilizing covert waterholing and T1059 scripts",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "af7a6645817537e5ac906bf18fc1a4d8",
+        "document_id": "CVE-2021-46364",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 15.54
+    },
+    {
+      "query_id": "bench_052_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "APT28 spearphishing campaign delivering malicious macros exploiting CVE-2023-38831",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2023-38831"
+      ],
+      "top_match": {
+        "chunk_id": "e665d74632f5005131c9273d8f0323eb",
+        "document_id": "CVE-2023-38831",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 29.08
+    },
+    {
+      "query_id": "bench_053_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "APT29 cloud environment lateral movement abusing SAML tokens and Exchange CVE-2021-26855",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 14.22
+    },
+    {
+      "query_id": "bench_054_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Lazarus cryptocurrency bridge heist deploying custom C2 implant via CVE-2021-44228",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "9d2b2209878c29c921938d938154de72",
+        "document_id": "CVE-2021-44228",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 8.61
+    },
+    {
+      "query_id": "bench_055_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Volt Typhoon persistent web shell placement on perimeter devices CVE-2021-26855",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 128.42
+    },
+    {
+      "query_id": "bench_056_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Sandworm destructive malware delivery targeting Ukrainian power substations CVE-2017-0144",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 6.81
+    },
+    {
+      "query_id": "bench_057_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "FIN7 fake job interview lure containing weaponized document exploiting CVE-2022-30190",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 12.76
+    },
+    {
+      "query_id": "bench_058_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "LockBit double extortion exfiltration using rclone and PsExec lateral execution",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "a80b98209006502cfa0f607f82ea3532",
+        "document_id": "CVE-2021-1733",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.3375
+      },
+      "latency_ms": 46.65
+    },
+    {
+      "query_id": "bench_059_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "BlackCat affiliate privilege escalation via domain controller vulnerability CVE-2020-1472",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "57379a7d69a25d8e107536ea97f7374e",
+        "document_id": "CVE-2020-1472",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 27.5
+    },
+    {
+      "query_id": "bench_060_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Carbanak command and control traffic using HTTPS obfuscation and T1059.001",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.5
+      },
+      "latency_ms": 54.65
+    },
+    {
+      "query_id": "bench_061_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Lateral propagation using PsExec utility and pass the hash credentials across domain",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "a80b98209006502cfa0f607f82ea3532",
+        "document_id": "CVE-2021-1733",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.3375
+      },
+      "latency_ms": 35.09
+    },
+    {
+      "query_id": "bench_062_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "LSASS memory injection using Mimikatz for NTLM hash harvesting on server",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "8935e208440912f38c9b79d776f09742",
+        "document_id": "CVE-2024-22318",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 169.64
+    },
+    {
+      "query_id": "bench_063_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Cobalt Strike Beacon HTTP listener beaconing to external threat infrastructure",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "0b3fee82d23cf5f2af8426da47457d06",
+        "document_id": "CVE-2022-39197_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.3375
+      },
+      "latency_ms": 24.78
+    },
+    {
+      "query_id": "bench_064_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "PowerShell Empire agent execution on target workstation via CVE-2022-30190",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 108.91
+    },
+    {
+      "query_id": "bench_065_apt_campaign",
+      "category": "apt_threat_actor",
+      "query": "Active Directory reconnaissance using BloodHound / SharpHound ingestor tool",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "7e838b1f4da3fb127ff45c89f65d7d5f",
+        "document_id": "CVE-2019-15701",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.3375
+      },
+      "latency_ms": 36.46
+    },
+    {
+      "query_id": "bench_066_multihop",
+      "category": "multi_hop_query",
+      "query": "Multi-hop lateral movement observed from 198.51.100.24 targeting EternalBlue CVE-2017-0144",
+      "expected_tier": "EXACT",
+      "predicted_tier": "EXACT",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "EXACT",
+        "composite_score": 0.965
+      },
+      "latency_ms": 62.9
+    },
+    {
+      "query_id": "bench_067_multihop",
+      "category": "multi_hop_query",
+      "query": "Host 198.51.100.24 compromised via EternalBlue and initiating outbound connections",
+      "expected_tier": "STRONG",
+      "predicted_tier": "STRONG",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "STRONG",
+        "composite_score": 0.8125
+      },
+      "latency_ms": 14.46
+    },
+    {
+      "query_id": "bench_068_multihop",
+      "category": "multi_hop_query",
+      "query": "PowerShell T1059.001 execution invoking msdt.exe URL protocol handler CVE-2022-30190",
+      "expected_tier": "PARTIAL",
+      "predicted_tier": "PARTIAL",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "PARTIAL",
+        "composite_score": 0.65
+      },
+      "latency_ms": 237.65
+    },
+    {
+      "query_id": "bench_069_multihop",
+      "category": "multi_hop_query",
+      "query": "Exploit payload delivering Cobalt Strike beacon via Apache Log4j2 JNDI CVE-2021-44228",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "9d2b2209878c29c921938d938154de72",
+        "document_id": "CVE-2021-44228",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 43.98
+    },
+    {
+      "query_id": "bench_070_multihop",
+      "category": "multi_hop_query",
+      "query": "ProxyLogon post-exploitation dropped webshell communicating with external C2 CVE-2021-26855",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 31.0
+    },
+    {
+      "query_id": "bench_071_multihop",
+      "category": "multi_hop_query",
+      "query": "Domain privilege escalation abusing Netlogon cryptographic flaw CVE-2020-1472 with Mimikatz",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "57379a7d69a25d8e107536ea97f7374e",
+        "document_id": "CVE-2020-1472",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 37.8
+    },
+    {
+      "query_id": "bench_072_multihop",
+      "category": "multi_hop_query",
+      "query": "Malicious archive unpacking and executing arbitrary DLL file CVE-2023-38831",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2023-38831"
+      ],
+      "top_match": {
+        "chunk_id": "e665d74632f5005131c9273d8f0323eb",
+        "document_id": "CVE-2023-38831",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 88.82
+    },
+    {
+      "query_id": "bench_073_multihop",
+      "category": "multi_hop_query",
+      "query": "Inbound exploitation attempt against Microsoft Exchange OWA interface CVE-2021-26855",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 36.19
+    },
+    {
+      "query_id": "bench_074_multihop",
+      "category": "multi_hop_query",
+      "query": "LDAP lookup triggering remote code execution in Log4j runtime CVE-2021-44228",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "9d2b2209878c29c921938d938154de72",
+        "document_id": "CVE-2021-44228",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 86.8
+    },
+    {
+      "query_id": "bench_075_multihop",
+      "category": "multi_hop_query",
+      "query": "Suspicious RPC traffic directed at domain controller MS-NRPC endpoint CVE-2020-1472",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2020-1472"
+      ],
+      "top_match": {
+        "chunk_id": "57379a7d69a25d8e107536ea97f7374e",
+        "document_id": "CVE-2020-1472",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 36.54
+    },
+    {
+      "query_id": "bench_076_multihop",
+      "category": "multi_hop_query",
+      "query": "Lateral SMB traffic matching EternalBlue exploit signature CVE-2017-0144",
+      "expected_tier": "PARTIAL",
+      "predicted_tier": "PARTIAL",
+      "relevant_documents": [
+        "CVE-2017-0144"
+      ],
+      "top_match": {
+        "chunk_id": "446e0fd5adfb0305972d02030e8949fe",
+        "document_id": "CVE-2017-0144_EPSS",
+        "confidence_tier": "PARTIAL",
+        "composite_score": 0.6125
+      },
+      "latency_ms": 41.42
+    },
+    {
+      "query_id": "bench_077_multihop",
+      "category": "multi_hop_query",
+      "query": "Follina diagnostic tool vulnerability abused through Office doc template CVE-2022-30190",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2022-30190"
+      ],
+      "top_match": {
+        "chunk_id": "bc5d37e78a1279f514c9c32cb6a08a02",
+        "document_id": "CVE-2022-30190",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 61.64
+    },
+    {
+      "query_id": "bench_078_multihop",
+      "category": "multi_hop_query",
+      "query": "WinRAR ZIP spoofing technique leading to arbitrary code execution CVE-2023-38831",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2023-38831"
+      ],
+      "top_match": {
+        "chunk_id": "e665d74632f5005131c9273d8f0323eb",
+        "document_id": "CVE-2023-38831",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 100.39
+    },
+    {
+      "query_id": "bench_079_multihop",
+      "category": "multi_hop_query",
+      "query": "SSRF targeting internal Exchange backend services without authentication CVE-2021-26855",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-26855"
+      ],
+      "top_match": {
+        "chunk_id": "59c024a8b7632007490cd53a403a9e94",
+        "document_id": "CVE-2021-26855_KEV",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 51.72
+    },
+    {
+      "query_id": "bench_080_multihop",
+      "category": "multi_hop_query",
+      "query": "Log4j string substitution lookup triggering outbound JNDI requests CVE-2021-44228",
+      "expected_tier": "WEAK",
+      "predicted_tier": "WEAK",
+      "relevant_documents": [
+        "CVE-2021-44228"
+      ],
+      "top_match": {
+        "chunk_id": "9d2b2209878c29c921938d938154de72",
+        "document_id": "CVE-2021-44228",
+        "confidence_tier": "WEAK",
+        "composite_score": 0.4
+      },
+      "latency_ms": 23.79
+    },
+    {
+      "query_id": "bench_081_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Unauthenticated remote buffer overflow reported in perimeter gateway device firmware",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "b3da3120ae2a747d896f9128f4f1304c",
+        "document_id": "CVE-2021-3793",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 89.52
+    },
+    {
+      "query_id": "bench_082_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Denial of service condition triggered by malformed HTTP request headers on proxy",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "b5f794706b297e2a1ac224139b425d5f",
+        "document_id": "CVE-2019-1817",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 194.33
+    },
+    {
+      "query_id": "bench_083_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Memory corruption during parsing of deeply nested JSON structures in web server",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "c23c6c4504eb2f13044baa7808fed217",
+        "document_id": "CVE-2020-9343",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 125.55
+    },
+    {
+      "query_id": "bench_084_ambiguous",
+      "category": "ambiguous_query",
+      "query": "SQL injection vulnerability permitting unauthorized extraction of user database records",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "f13356832af23c0eba27fc2e03e2b6d7",
+        "document_id": "CVE-2026-69704",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 133.66
+    },
+    {
+      "query_id": "bench_085_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Cross-site scripting flaw in administration portal navigation bar parameters",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "ff07ff0b44e706777636114a4c715a22",
+        "document_id": "CVE-2018-14082",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 121.46
+    },
+    {
+      "query_id": "bench_086_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Privilege escalation via insecure temporary file creation in helper daemon",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "4ba066d5d1198b396b1d4f660d1765c3",
+        "document_id": "CVE-2020-28910",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 85.12
+    },
+    {
+      "query_id": "bench_087_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Integer underflow vulnerability leading to unexpected application crash on restart",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "2fba92230923deb2218cf50280c59252",
+        "document_id": "CVE-2026-48296",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 118.04
+    },
+    {
+      "query_id": "bench_088_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Improper certificate validation allowing man-in-the-middle inspection of TLS streams",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "a68ac06036583e3a10aff9eb81e4120c",
+        "document_id": "CVE-2026-4434",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 55.79
+    },
+    {
+      "query_id": "bench_089_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Arbitrary file overwrite during decompression of untrusted tarball archives",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "7a69440efd5f86caf0638fae620b8d3b",
+        "document_id": "CVE-2022-23522",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 80.43
+    },
+    {
+      "query_id": "bench_090_ambiguous",
+      "category": "ambiguous_query",
+      "query": "Race condition in concurrent session management allowing session hijacking",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "13283dc30a28a98ceb0177681eb65a60",
+        "document_id": "CVE-2026-20869",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 51.45
+    },
+    {
+      "query_id": "bench_091_benign",
+      "category": "benign_noise",
+      "query": "Applying monthly operating system patches across Ubuntu development virtual machines",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "3c9c4aa428f66d3dc44ad5aa1178fe16",
+        "document_id": "CVE-2024-22426",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 45.56
+    },
+    {
+      "query_id": "bench_092_benign",
+      "category": "benign_noise",
+      "query": "Configuring automated nightly backup schedules for PostgreSQL database clusters",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "6d110c99f3ad510721bca88ae36074af",
+        "document_id": "CVE-2024-12850",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 13.1
+    },
+    {
+      "query_id": "bench_093_benign",
+      "category": "benign_noise",
+      "query": "Updating desktop wallpaper and screen saver timeout group policy preferences",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "59d4f4ff73022ee72552d40a1e5b6f4f",
+        "document_id": "CVE-2014-1812_KEV",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 13.14
+    },
+    {
+      "query_id": "bench_094_benign",
+      "category": "benign_noise",
+      "query": "Standardizing default browser homepage settings for newly onboarded marketing employees",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "7f10dd4630b0ec50c1b7e8863bf5c2d1",
+        "document_id": "CVE-2026-54393",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 22.16
+    },
+    {
+      "query_id": "bench_095_benign",
+      "category": "benign_noise",
+      "query": "Deploying office productivity software package updates using Microsoft Endpoint Manager",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "6bad510f7c3351163170b177739e5ee4",
+        "document_id": "CVE-2009-0563_KEV",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 57.33
+    },
+    {
+      "query_id": "bench_096_benign",
+      "category": "benign_noise",
+      "query": "Configuring print server spooler drivers and network printer share permissions",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "0b1278a6e1c0a03ed5c2204a93124822",
+        "document_id": "CVE-2010-2729",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 65.31
+    },
+    {
+      "query_id": "bench_097_benign",
+      "category": "benign_noise",
+      "query": "Adding additional RAM and allocating extra virtual CPU cores to hypervisor nodes",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "75608e397be535cb25a0b56a1bf53955",
+        "document_id": "CVE-2022-27813",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 22.92
+    },
+    {
+      "query_id": "bench_098_benign",
+      "category": "benign_noise",
+      "query": "Renewing internal TLS certificates for internal payroll intranet web portal",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "ac8617408ff3b62a64d4a1a722097c86",
+        "document_id": "CVE-2022-49094",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 55.15
+    },
+    {
+      "query_id": "bench_099_benign",
+      "category": "benign_noise",
+      "query": "Rotating administrative credentials for routine quarterly compliance audit",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "6a9c5094ab59e47edb0848085fc3343a",
+        "document_id": "CVE-2023-47187",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 28.11
+    },
+    {
+      "query_id": "bench_100_benign",
+      "category": "benign_noise",
+      "query": "Migrating legacy DNS zone records to new high-availability nameserver pair",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "842798cbf62d7f8a5d1a107726456bcb",
+        "document_id": "CVE-2026-54543",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 29.46
+    },
+    {
+      "query_id": "bench_101_benign",
+      "category": "benign_noise",
+      "query": "Enabling dual monitor display settings and graphics driver updates on workstations",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "edbbbd820e7feae010266bff4380ba69",
+        "document_id": "CVE-2025-37743",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 83.96
+    },
+    {
+      "query_id": "bench_102_benign",
+      "category": "benign_noise",
+      "query": "Scheduling routine maintenance window for annual datacenter generator testing",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "17d251308df5acd17d22436d793498af",
+        "document_id": "CVE-2017-14841",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 7.07
+    },
+    {
+      "query_id": "bench_103_benign",
+      "category": "benign_noise",
+      "query": "Installing localized keyboard language packs on standard corporate laptop build",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "79c52d2f2285d63b5112419d021a7aa7",
+        "document_id": "CVE-2024-25982",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 72.26
+    },
+    {
+      "query_id": "bench_104_benign",
+      "category": "benign_noise",
+      "query": "Purging temporary log files from web servers to recover local disk storage capacity",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "796a8592c5ac373b0b438ef37f8bc7c3",
+        "document_id": "CVE-2026-82640",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 168.3
+    },
+    {
+      "query_id": "bench_105_benign",
+      "category": "benign_noise",
+      "query": "Verifying uninterrupted power supply battery backup health across server racks",
+      "expected_tier": "UNSUPPORTED",
+      "predicted_tier": "UNSUPPORTED",
+      "relevant_documents": [],
+      "top_match": {
+        "chunk_id": "80ff5992bc6f2f189593f81f3de5f1a6",
+        "document_id": "CVE-2026-80711",
+        "confidence_tier": "UNSUPPORTED",
+        "composite_score": 0.125
+      },
+      "latency_ms": 45.81
+    }
+  ]
+}
